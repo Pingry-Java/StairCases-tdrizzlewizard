@@ -23,11 +23,10 @@ public class StairCases
   }
 
   /**
-   * This method will print rows of Xs until it reaches the specified number
+   * This method will print rows of Xs until it reaches 0
    */
   public static void printAscending(int size)
   {  int counter = 0;
-     System.out.println();
      while (counter < size)
      {
         System.out.print("x");
@@ -44,7 +43,7 @@ public class StairCases
     }
     
     else
-        System.out.println("Done");
+        System.out.println();
     
      
     
@@ -54,11 +53,31 @@ public class StairCases
   
       
 /**
-   * Write your javadoc here
+   * This method will print rows of Xs until it reaches the desired amount
    */
   public static void printDescending(int size)
   {
+    int counter = 1;  
+    while (counter <= size)
+    {
+      int counter2 = counter;
+      while (counter2 > 0)
+      {
+          System.out.print("x");
+          --counter2;
+          
+      }
+      System.out.println();
+      ++counter;
       
-  }
+      
+     
+    
+          
+      
+    }
   //TODO Finish this method
+  }
+    
+        
 }
