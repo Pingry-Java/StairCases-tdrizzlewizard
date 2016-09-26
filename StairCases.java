@@ -26,13 +26,27 @@ public class StairCases
    * This method will print rows of Xs until it reaches the specified number
    */
   public static void printAscending(int size)
-  {
-      for (int x = 1; x <= size; x++;)
-          System.out.print("x");
-      
-      System.out.println();
-      
-      printAscending(size);
+  {  int counter = 0;
+     System.out.println();
+     while (counter < size)
+     {
+        System.out.print("x");
+        counter++;
+         
+     }
+         
+         
+    System.out.println();
+    --size;
+    if (size > 0)
+    {
+        printAscending(size);
+    }
+    
+    else
+        System.out.println("Done");
+    
+     
     
         
   }
