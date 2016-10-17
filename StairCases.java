@@ -26,6 +26,7 @@ public class StairCases
 
   /**
    * This method will print rows of Xs until it reaches 0
+   *@param size the number of rows and number of xs in largest row
    */
   public static void printAscending(int size)
   {  int counter = 0;
@@ -53,6 +54,8 @@ public class StairCases
       
 /**
    * This method will print rows of Xs until it reaches the desired amount
+   *@param size the number of rows and number of xs in largest rows
+   *@param counter the number of xs in the current row
    */
   public static void printDescending(int size, int counter)
   {  
