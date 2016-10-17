@@ -19,6 +19,7 @@ public class StairCases
     System.out.println("Type the number of rows you want");
     int size = keyboard.nextInt();
     printAscending(size);
+    System.out.println();
     printDescending(size);
   }
 
@@ -27,21 +28,18 @@ public class StairCases
    */
   public static void printAscending(int size)
   {  int counter = 0;
+     System.out.println();
      while (counter < size)
      {
         System.out.print("x");
         counter++;
+        
          
      }
-         
-         
-    System.out.println();
     --size;
-    if (size > 0)
-    {
+    if (size > 0 )
         printAscending(size);
-    }
-    
+ 
     else
         System.out.println();
     
