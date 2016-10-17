@@ -20,7 +20,8 @@ public class StairCases
     int size = keyboard.nextInt();
     printAscending(size);
     System.out.println();
-    printDescending(size);
+    int counter = 1;
+    printDescending(size, counter);
   }
 
   /**
@@ -36,9 +37,9 @@ public class StairCases
         
          
      }
-    --size;
+    
     if (size > 0 )
-        printAscending(size);
+        printAscending(--size);
  
     else
         System.out.println();
@@ -53,10 +54,9 @@ public class StairCases
 /**
    * This method will print rows of Xs until it reaches the desired amount
    */
-  public static void printDescending(int size)
-  {
-    int counter = 1;  
-    while (counter <= size)
+  public static void printDescending(int size, int counter)
+  {  
+    if (counter <= size)
     {
       int counter2 = counter;
       while (counter2 > 0)
@@ -65,8 +65,11 @@ public class StairCases
           --counter2;
           
       }
-      System.out.println();
-      ++counter;
+        
+      System.out.println();    
+      printDescending(size, ++counter);  
+        
+    
       
       
      
@@ -74,6 +77,7 @@ public class StairCases
           
       
     }
+    
   //TODO Finish this method
   }
     
